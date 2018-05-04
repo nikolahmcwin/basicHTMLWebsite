@@ -1,0 +1,263 @@
+/* Nikolah Pearce tiddlywinks_stylesheet.css */
+
+/*
+	COMP112 Assignment stylesheet.
+	University of Otago Tiddlyewinks Club "Tiddly".
+	April-May 2017.
+*/
+
+
+/* 
+	Colours used:
+	Grey 				#DADADA		Background	
+	Off white			#E9E9E9		Visited links
+	Bright Orange		#E74F1B		Navigation Bar	
+	Darker Orange		#A43A15		Headings
+	Dark Brown Orange	#57200D		Borders and in text links
+*/
+
+* {
+	margin: 0px;
+	padding: 0px;	
+}
+
+html {
+	background-color: #DADADA;
+	color: #000000;
+}
+body {
+	font-family: arial, sans-serif;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Title */
+
+/* Header */
+
+header, footer {
+	font-family: impact, arial black, sans-serif;
+	color: #000000;
+    background-color: inherit;
+}
+header, #banner {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+header {
+    position:relative; /* Set nearest non static ancestor for Logo positioning */
+}
+#banner {
+	background-image:url(./images/banner_2.png); /* Banner image background */
+    height: 275px;
+    opacity: 0.75;
+}
+#top_nav, footer {
+    border: 2px solid #000000;
+}
+#top_nav ul {
+	background-color: #E74F1B;
+	color: #FFFFFF;
+    padding: 18px 150px 18px 15px;
+}
+#top_nav li {
+	text-transform: uppercase;
+	list-style-type: none;
+	display: inline-block;
+	font-size: 1.2em;	
+	text-align: center;
+    padding: 0px 15px;
+}
+#top_logo {
+    position: absolute;
+    right: 20px;
+    top: 195px;
+}
+
+/* Navigation link properties */
+
+.navigation a:link {
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: inherit;
+}
+.navigation a:visited{
+	color: #E9E9E9;
+	background-color: inherit;
+}
+.navigation a:hover{
+    color: #FFFFFF;
+    background-color: inherit;
+    text-decoration: underline;
+}
+.navigation a#current, .navigation a:active{
+	text-decoration: underline;
+    color: #FFFFFF;
+	background-color: inherit;
+}
+
+/* Main content */
+
+#content{
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 40px;
+    /* The shadow on the entire content div */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+main {
+	font-family: verdana, geneva, sans-serif;
+	margin: 50px;
+}
+h2, h3, h4, p {
+	clear: both;
+}
+.float_l {
+	width: 50%;
+	float: left;
+}
+.floating_image {
+	float: right;
+	border: 2px solid #57200D;
+	margin: 50px 50px 0px 0px;
+}
+
+
+
+/* Text properties */
+
+h1 {
+	text-align: right;
+    padding: 10px;
+    font-style: italic;
+    font-size: 1.5em;
+}
+h2, h3, h4 {
+	background-color: inherit;
+	color: #A43A15;
+	margin: 20px 0px 15px 0px;
+}
+h2 {
+    font-size: 2em;
+}
+main h3 {
+    font-size: 1.4em;
+    margin-top: 35px;
+}
+h4 {
+    font-size: 1.2em
+}
+p {
+    margin-bottom: 15px;
+}
+#calendar li {
+    list-style-type: none;
+    padding: 5px 0px;
+    margin-left: 10px;
+}
+#calendar ul li {
+      margin-left: 50px;  
+} 
+#game_terms {
+   margin-left: 35px;
+}
+#game_terms li {
+    padding-bottom: 3px;
+}
+table {
+    border-collapse: collapse;
+    margin: 30px;
+}
+table, th, tr, td {
+	padding: 5px;
+	border: 2px solid #57200D;
+    text-align: center;
+}
+th, tr, td {
+    
+}
+caption {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Standard link properties */
+
+a:link {
+	color: #57200D;
+	background-color: inherit;
+    text-decoration: underline;
+    font-weight: bold;
+}
+a:visited {
+	color: #000000;
+	background-color: inherit;
+    text-decoration: underline;
+    font-weight: normal;
+}
+a:hover {
+    color: #E74F1B;
+    background-color: inherit;
+}
+a:active {
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+	background-color: #E74F1B;
+	color: #000000;
+	padding: 40px 0px 40px 40px;
+	height: 230px;
+    position: relative;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+footer h2, footer h3 {
+    background-color: inherit;
+    color: #000000;
+}
+footer h2 {
+    font-size: 1.25em;
+}
+footer h3 {
+    font-size: 1.1em;
+}
+footer li {
+	list-style-type: none;
+    padding-left: 20px;
+}
+#bottom_nav, #contact_info {
+ 	float: left;
+}
+#bottom_nav {
+ 	width: 20%;
+	padding-right: 50px;
+}
+#contact_info {
+    height: 220px;
+	width: 35%;
+	padding: 0px 50px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+ #footer_logo {
+    position:absolute;
+    right: 30px;
+    top: 60px;
+}
+
+/* Disclaimer */
+
+#disclaimer {
+	margin: 15px 10px 30px 0px;
+}
+#disclaimer p {
+	text-align: right;
+	font-size: 0.7em;
+    margin-bottom: 0px;
+}
+
